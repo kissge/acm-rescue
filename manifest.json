@@ -1,0 +1,15 @@
+{
+    "name": "ACM Rescue",
+    "version": "0.0.1",
+    "author": "KISUGE, Yuto",
+    "manifest_version": 2,
+    "description": "No more `Access Denied' on ACM DL",
+    "permissions": ["http://dl.acm.org/"],
+    "content_scripts": [
+        {
+            "matches": ["http://delivery.acm.org/*"],
+            "js": ["jquery-2.1.1.min.js", "main.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
